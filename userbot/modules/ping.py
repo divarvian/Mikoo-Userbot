@@ -137,7 +137,7 @@ async def _(pong):
 
 @man_cmd(pattern="absen$")
 async def _(absen):
-    await absen.reply(random.choice(absen))
+    await edit_or_reply(absen, random.choice(absen))
 
 
 CMD_HELP.update(
