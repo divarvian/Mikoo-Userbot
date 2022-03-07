@@ -146,7 +146,6 @@ async def nyespam(event):
 async def _(event):
     await event.client.send_message(
         event.chat_id, "**https://t.me/GhX0192/2**", reply_to=event.reply_to_msg_id
-        event.chat_id, "**https://t.me/GhX0192/2**", reply_to=event.reply_to_msg_id
     )
     await event.delete()
 
@@ -287,7 +286,7 @@ CMD_HELP.update(
         \n\n  •  **Syntax :** `{cmd}spam` <jumlah spam> <text>\
         \n  •  **Function : **Membanjiri teks dalam obrolan!!\
         \n\n  •  **Syntax :** `{cmd}virtext`\
-        \n  •  **Function : **Membanjiri teks dalam obrolan dengan virtext!!\
+        \n  •  **Function : **Mengirim teks dalam obrolan dengan virtext!!\
         \n\n  •  **Syntax :** `{cmd}cspam` <text>\
         \n  •  **Function : **Spam surat teks dengan huruf.\
         \n\n  •  **Syntax :** `{cmd}sspam` <reply sticker>\
