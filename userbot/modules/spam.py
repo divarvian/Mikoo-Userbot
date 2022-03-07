@@ -152,7 +152,7 @@ async def _(event):
 @man_cmd(pattern="virtext2(?: |$)(.*)")
 async def _(event):
     await event.client.send_message(
-        event.chat_id, "**[Jangan di Click](https://t.me/GhX0192/6)**", reply_to=event.reply_to_msg_id
+        event.chat_id, f"**[Jangan di Click](https://t.me/GhX0192/6)**", reply_to=event.reply_to_msg_id
     )
     await event.delete()
 
