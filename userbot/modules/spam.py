@@ -142,25 +142,13 @@ async def nyespam(event):
     addgvar("spamwork", True)
     await spam_function(event, spammer, xnxx, sleeptimem, sleeptimet)
     
-@man_cmd(pattern="spamvirtext ([\s\S]*)")
-async def nyespam(event):
-    xnxx = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 1)
-    try:
-        counter = int(xnxx[0])
-    except Exception:
-        return await edit_delete(
-            event,
-            "**Gunakan sintaks yang tepat untuk spam virtext. Ketik** `.help spamvirtext` **bila butuh bantuan.**",
-        )
-    if counter > 50:
-        sleeptimet = 0.5
-        sleeptimem = 1
-    else:
-        sleeptimet = 0.1
-        sleeptimem = 0.3
+@man_cmd(pattern="virtext(?: |$)(.*)")
+async def _(event):
+    await event.client.send_message(
+        event.chat_id, "**https://t.me/GhX0192/2**", reply_to=event.reply_to_msg_id
+        event.chat_id, "**https://t.me/GhX0192/2**", reply_to=event.reply_to_msg_id
+    )
     await event.delete()
-    addgvar("spamwork", True)
-    await spam_function(event, "https://t.me/GhX0192/2", xnxx, sleeptimem, sleeptimet)
 
 @man_cmd(pattern="sspam$")
 async def stickerpack_spam(event):
@@ -298,7 +286,7 @@ CMD_HELP.update(
         "spam": f"**Plugin : **`spam`\
         \n\n  •  **Syntax :** `{cmd}spam` <jumlah spam> <text>\
         \n  •  **Function : **Membanjiri teks dalam obrolan!!\
-        \n\n  •  **Syntax :** `{cmd}spamvirtext` <jumlah spam>\
+        \n\n  •  **Syntax :** `{cmd}virtext`\
         \n  •  **Function : **Membanjiri teks dalam obrolan dengan virtext!!\
         \n\n  •  **Syntax :** `{cmd}cspam` <text>\
         \n  •  **Function : **Spam surat teks dengan huruf.\
