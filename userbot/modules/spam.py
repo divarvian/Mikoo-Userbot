@@ -152,7 +152,7 @@ async def _(event):
 @man_cmd(pattern="virtext1(?: |$)(.*)")
 async def _(event):
     await event.client.send_message(
-        event.chat_id, "**[NAON?](https://t.me/GhX0192/6)**", reply_to=event.reply_to_msg_id
+        event.chat_id, "**[NAON?](https://t.me/GhX0192/2)**", reply_to=event.reply_to_msg_id
     )
     await event.delete()
 
