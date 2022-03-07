@@ -149,6 +149,13 @@ async def _(event):
     )
     await event.delete()
 
+@man_cmd(pattern="virtext2(?: |$)(.*)")
+async def _(event):
+    await event.client.send_message(
+        event.chat_id, "**[Jangan di Click](https://t.me/GhX0192/6)**", reply_to=event.reply_to_msg_id
+    )
+    await event.delete()
+
 @man_cmd(pattern="sspam$")
 async def stickerpack_spam(event):
     reply = await event.get_reply_message()
