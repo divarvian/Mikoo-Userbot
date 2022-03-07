@@ -134,12 +134,6 @@ async def _(pong):
     duration = (end - start).microseconds / 9000
     await xx.edit("🏓 **Ping!**\n`%sms`" % (duration))
 
-
-@man_cmd(pattern="absen$")
-async def _(absen):
-    await edit_or_reply(absen, random.choice(absen))
-
-
 CMD_HELP.update(
     {
         "ping": f"**Plugin : **`ping`\
@@ -147,8 +141,6 @@ CMD_HELP.update(
         \n  •  **Function : **Untuk menunjukkan ping userbot.\
         \n\n  •  **Syntax :** `{cmd}pong`\
         \n  •  **Function : **Sama seperti perintah ping\
-        \n\n  •  **Syntax :** `{cmd}absen`\
-        \n  •  **Function : **Untuk absen\
     "
     }
 )
