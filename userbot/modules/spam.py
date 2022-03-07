@@ -149,10 +149,17 @@ async def _(event):
     )
     await event.delete()
 
+@man_cmd(pattern="virtext1(?: |$)(.*)")
+async def _(event):
+    await event.client.send_message(
+        event.chat_id, "**[NAON?](https://t.me/GhX0192/6)**", reply_to=event.reply_to_msg_id
+    )
+    await event.delete()
+
 @man_cmd(pattern="virtext2(?: |$)(.*)")
 async def _(event):
     await event.client.send_message(
-        event.chat_id, f"**[Jangan di Click](https://t.me/GhX0192/6)**", reply_to=event.reply_to_msg_id
+        event.chat_id, "**[Jangan di Click](https://t.me/GhX0192/6)**", reply_to=event.reply_to_msg_id
     )
     await event.delete()
 
@@ -292,8 +299,6 @@ CMD_HELP.update(
         "spam": f"**Plugin : **`spam`\
         \n\n  •  **Syntax :** `{cmd}spam` <jumlah spam> <text>\
         \n  •  **Function : **Membanjiri teks dalam obrolan!!\
-        \n\n  •  **Syntax :** `{cmd}virtext`\
-        \n  •  **Function : **Mengirim teks dalam obrolan dengan virtext!!\
         \n\n  •  **Syntax :** `{cmd}cspam` <text>\
         \n  •  **Function : **Spam surat teks dengan huruf.\
         \n\n  •  **Syntax :** `{cmd}sspam` <reply sticker>\
