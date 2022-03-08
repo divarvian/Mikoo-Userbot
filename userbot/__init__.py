@@ -205,7 +205,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot version
-BOT_VER = os.environ.get("BOT_VER", "0.0.1")
+BOT_VER = os.environ.get("BOT_VER", "0.0.3")
 
 # Default .alive logo
 ALIVE_LOGO = (
