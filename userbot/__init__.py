@@ -28,7 +28,6 @@ from telethon.utils import get_display_name
 
 from .storage import Storage
 
-
 def STORAGE(n):
     return Storage(Path("data") / n)
 
