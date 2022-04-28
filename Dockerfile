@@ -1,3 +1,9 @@
-FROM mrismanaziz/Mikoo-Userbot:slim-buster
+FROM mrismanaziz/man-userbot:slim-buster
+
+RUN git clone https://github.com/divarvian/Mikoo-Userbot.git /home/mikoo/ \
+    && chmod 777 /home/mikoo \
+    && mkdir /home/mikoo/bin/
+
+WORKDIR /home/mikoo/
 
 CMD [ "bash", "start" ]
