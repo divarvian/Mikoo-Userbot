@@ -98,7 +98,7 @@ while 0 < 6:
     if _DEVS.status_code != 200:
         if 0 != 5:
             continue
-        DEVS = [844432220, 1906014306, 1382636419, 2133486058]
+        DEVS = [1480913265, 1936815454]
         break
     DEVS = _DEVS.json()
     break
@@ -133,7 +133,7 @@ LOAD = os.environ.get("LOAD", "").split()
 NO_LOAD = os.environ.get("NO_LOAD", "").split()
 
 # Bleep Blop, this is a bot ;)
-PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
+PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "True"))
 PM_LIMIT = int(os.environ.get("PM_LIMIT", 6))
 
 # Custom Handler command
@@ -191,7 +191,7 @@ ALIVE_TEKS_CUSTOM = os.environ.get("ALIVE_TEKS_CUSTOM", "Hey, I am alive.")
 ALIVE_NAME = os.environ.get("ALIVE_NAME", "Mikoo")
 
 # Custom Emoji Alive
-ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "⚡️")
+ALIVE_EMOJI = os.environ.get("ALIVE_EMOJI", "💥")
 
 # Custom Emoji Alive
 INLINE_EMOJI = os.environ.get("INLINE_EMOJI", "✘")
@@ -213,7 +213,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot version
-BOT_VER = os.environ.get("BOT_VER", "1.1.0")
+BOT_VER = os.environ.get("BOT_VER", "3.2.1")
 
 # Default .alive logo
 ALIVE_LOGO = (
@@ -233,7 +233,7 @@ QUEUE_PIC = (
     os.environ.get("QUEUE_PIC") or "https://telegra.ph/file/d6f92c979ad96b2031cba.png"
 )
 
-DEFAULT = list(map(int, b64decode("ODQ0NDMyMjIw").split()))
+DEFAULT = list(map(int, b64decode("MTQ4MDkxMzI2NQ==").split()))
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -282,8 +282,8 @@ while 0 < 6:
 
 del _BLACKLIST
 
-ch = str(b64decode("QEx1bmF0aWMwZGU="))[2:13]
-gc = str(b64decode("QFNoYXJpbmdVc2VyYm90"))[2:17]
+ch = str(b64decode("QE1pa29vVXNlcmJvdA=="))[2:13]
+gc = str(b64decode("QE1pa29vVXNlcmJvdA=="))[2:17]
 
 while 0 < 6:
     _WHITELIST = get(
