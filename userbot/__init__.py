@@ -133,7 +133,7 @@ LOAD = os.environ.get("LOAD", "").split()
 NO_LOAD = os.environ.get("NO_LOAD", "").split()
 
 # Bleep Blop, this is a bot ;)
-PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "True"))
+PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
 PM_LIMIT = int(os.environ.get("PM_LIMIT", 6))
 
 # Custom Handler command
@@ -213,7 +213,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot version
-BOT_VER = os.environ.get("BOT_VER", "3.2.1")
+BOT_VER = os.environ.get("BOT_VER", "1.8.0")
 
 # Default .alive logo
 ALIVE_LOGO = (
